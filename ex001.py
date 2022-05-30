@@ -11,13 +11,13 @@ print("5 - losango")
 print("6 - circulo")
 
 while True:
-    opcoes = int(input("\n"))
+    opcoes = int(input())
     if opcoes >= 1 and opcoes <= 6:
         break
 
     print("digite um número de 1 a 6")
 
-if opcoes:
+if opcoes == 1:
     base = float(input("Base: "))
     altura = float(input("Altura: "))
     print("A área do triângulo é de", ((base * altura)/2), "metros quadrados")
@@ -45,8 +45,7 @@ elif opcoes == 5:
 
 elif opcoes == 6:
     raio = float(input("Raio: "))
-    print("A área da circunferência é de {:.2f} \
-    metros quadrados".format((PI*(raio**2))))
+    print(f"A área da é de {(PI * raio ** 2):.2f} metro quadrados")
 
 palavra = input("Insira alguma palavra\n\n")
 
@@ -54,9 +53,9 @@ tamanho = len(palavra)
 metadeDaPalavra = int(tamanho / 2)
 
 print("\nPalavra Completa:", palavra)
-print("\nPrimeira metade: {}".format(palavra[0:metadeDaPalavra]))
-print("\nSegunda metade: {}".format(palavra[metadeDaPalavra:tamanho]))
-print("\nSegundo caractere até o fim: {}".format(palavra[2:tamanho]))
-print("\nPalavra Duplicada: {}".format(palavra*2))
-print("\nPalavra Triplicada: {}".format(palavra*3))
-print("\nPalavra Concatenada: {}".format(palavra+"MatheusSoares"))
+print(f"\nPrimeira metade: {palavra[0:metadeDaPalavra]}")
+print(f"\nSegunda metade: {palavra[metadeDaPalavra:tamanho]}")
+print(f"\nSegundo caractere até o fim: {palavra[2:tamanho]}")
+print(f"\nPalavra Duplicada: {palavra * 2}")
+print(f"\nPalavra Triplicada: {palavra * 3}")
+print(f"\nPalavra Concatenada: {palavra} + MatheusSoares")
