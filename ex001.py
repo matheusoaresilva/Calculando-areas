@@ -1,13 +1,19 @@
-opcoes = 0
-while(opcoes < 1 or opcoes > 6):
-    print("Selecione um para calcular")
-    print("1 - triângulo")
-    print("2 - retângulo")
-    print("3 - quadrado")
-    print("4 - trapézio")
-    print("5 - losango")
-    print("6 - circulo")
+"""Exercício de python"""
+
+print("Selecione um polígono para calcular a área")
+print("1 - triângulo")
+print("2 - retângulo")
+print("3 - quadrado")
+print("4 - trapézio")
+print("5 - losango")
+print("6 - circulo")
+
+while True:
     opcoes = int(input("\n"))
+    if opcoes >= 1 and opcoes <= 6:
+        break
+
+    print("digite um número de 1 a 6")
 
 if (opcoes == 1):
     base = float(input("Base: "))
