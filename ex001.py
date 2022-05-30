@@ -1,5 +1,7 @@
 """Exercício de python"""
 
+PI = 3.1415
+
 print("Selecione um polígono para calcular a área")
 print("1 - triângulo")
 print("2 - retângulo")
@@ -42,7 +44,6 @@ elif opcoes == 5:
     print("A área do losango é de", ((D*d)/2))
 
 elif opcoes == 6:
-    PI = 3.1415
     raio = float(input("Raio: "))
     print("A área da circunferência é de {:.2f} \
     metros quadrados".format((PI*(raio**2))))
