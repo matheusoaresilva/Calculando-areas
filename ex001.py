@@ -42,10 +42,10 @@ elif opcoes == 5:
     print("A área do losango é de", ((D*d)/2))
 
 elif opcoes == 6:
-    pi = 3.1415
+    PI = 3.1415
     raio = float(input("Raio: "))
     print("A área da circunferência é de {:.2f} \
-    metros quadrados".format((pi*(raio**2))))
+    metros quadrados".format((PI*(raio**2))))
 
 palavra = input("Insira alguma palavra\n\n")
 
