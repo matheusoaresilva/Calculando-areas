@@ -38,19 +38,15 @@ elif (opcoes == 5):
 elif (opcoes == 6):
     pi = 3.1415
     raio = float(input("Raio: "))
-    print("A área da circunferência é de {:.2f} metros quadrados".format((pi*(raio**2))))
-
-
-
-# -------------------------------------------------------------------------
-
+    print("A área da circunferência é de {:.2f} \
+    metros quadrados".format((pi*(raio**2))))
 
 palavra = input("Insira alguma palavra\n\n")
 
 tamanho = len(palavra)
 metadeDaPalavra = int(tamanho / 2)
 
-print("\nPalavra Completa:",palavra)
+print("\nPalavra Completa:", palavra)
 print("\nPrimeira metade: {}".format(palavra[0:metadeDaPalavra]))
 print("\nSegunda metade: {}".format(palavra[metadeDaPalavra:tamanho]))
 print("\nSegundo caractere até o fim: {}".format(palavra[2:tamanho]))
