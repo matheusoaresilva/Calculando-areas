@@ -12,7 +12,7 @@ print("6 - circulo")
 
 while True:
     opcoes = int(input())
-    if opcoes >= 1 and opcoes <= 6:
+    if 1 <= opcoes <= 6:
         break
 
     print("digite um número de 1 a 6")
