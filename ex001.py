@@ -15,33 +15,33 @@ while True:
 
     print("digite um número de 1 a 6")
 
-if (opcoes == 1):
+if opcoes:
     base = float(input("Base: "))
     altura = float(input("Altura: "))
     print("A área do triângulo é de", ((base * altura)/2), "metros quadrados")
 
-elif (opcoes == 2):
+elif opcoes == 2:
     base = float(input("Base: "))
     altura = float(input("Altura: "))
     print("A área do retângulo é de", (base * altura), "metros quadrados")
 
-elif (opcoes == 3):
+elif opcoes == 3:
     lado = float(input("Lado: "))
     print("A área do quadrado é de", (lado ** 2), "metros quadrados")
 
-elif (opcoes == 4):
+elif opcoes == 4:
     b = float(input("Base Menor: "))
     B = float(input("Base Maior: "))
     altura = float(input("Altura: "))
     area = ((b + B) * altura) / 2
     print("A área do trapézio é de", area, "metros quadrados")
 
-elif (opcoes == 5):
+elif opcoes == 5:
     D = float(input("Diagonal Maior: "))
     d = float(input("Diagonal Menor: "))
     print("A área do losango é de", ((D*d)/2))
 
-elif (opcoes == 6):
+elif opcoes == 6:
     pi = 3.1415
     raio = float(input("Raio: "))
     print("A área da circunferência é de {:.2f} \
